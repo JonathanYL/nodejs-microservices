@@ -1,0 +1,21 @@
+{
+  "name": "@nodejs-microservices/protos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rimraf dist/ts && mkdirp dist/ts",
+    "build": "./build.sh",
+    "postbuild": "cp package.json ./dist/ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mkdirp": "^3.0.1",
+    "rimraf": "^5.0.5",
+    "ts-proto": "^1.163.0",
+    "typescript": "^5.2.2"
+  }
+}
