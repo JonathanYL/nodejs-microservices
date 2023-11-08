@@ -18,9 +18,7 @@ jobs:
           registry-url: "https://registry.npmjs.org/"
           scope: "@jyjelly-nodejs-microservices"
       - name: Install Protoc
-        uses: arduino/setup-protoc@master
-        with:
-          version: "3.x"
+        uses: arduino/setup-protoc@v2
       - name: Install and Build Packages
         run: |
           cd packages/protos
