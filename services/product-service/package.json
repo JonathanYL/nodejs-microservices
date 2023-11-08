@@ -18,6 +18,8 @@
   },
   "dependencies": {
     "@grpc/grpc-js": "^1.9.9",
+    "@jyjelly/protos": "^1.5.2",
+    "@rsbh-nodejs-microservices/protos": "2.1",
     "pg": "^8.11.3",
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.3.17"

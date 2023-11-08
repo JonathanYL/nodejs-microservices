@@ -34,7 +34,7 @@ message GetProductResponse {
 }
 
 message ListProductsRequest {
-
+  
 }
 
 message ListProductsResponse {

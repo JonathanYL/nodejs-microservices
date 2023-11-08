@@ -2,7 +2,7 @@ name: Release
 on:
   push:
     tags:
-      - "@jonathanyl-nodejs-microservices/protos@*"
+      - "@jyjelly/protos@*"
 jobs:
   publish:
     name: Build and Publish
@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: "16.x"
           registry-url: "https://registry.npmjs.org/"
-          scope: "@jonathanyl-nodejs-microservices"
+          scope: "@jyjelly"
       - name: Install Protoc
         uses: arduino/setup-protoc@v2
       - name: Install and Build Packages
