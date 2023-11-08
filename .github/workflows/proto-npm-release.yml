@@ -1,10 +1,8 @@
 name: Release
-
 on:
   push:
     tags:
-      - "@jonathanyl-nodejs-microservices/protos@*"
-
+      - "@jyjelly-nodejs-microservices/protos@*"
 jobs:
   publish:
     name: Build and Publish
@@ -13,25 +11,21 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: "16.x"
           registry-url: "https://registry.npmjs.org/"
-          scope: "@jonathanyl-nodejs-microservices"
-
+          scope: "@jyjelly-nodejs-microservices"
       - name: Install Protoc
         uses: arduino/setup-protoc@master
         with:
           version: "3.x"
-
       - name: Install and Build Packages
         run: |
           cd packages/protos
           npm install
           npm run build
-
       - name: Publish packages
         run: |
           cd packages/protos/dist/ts
